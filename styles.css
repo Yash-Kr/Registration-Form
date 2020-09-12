@@ -103,18 +103,19 @@ footer {
 }
 
 /* ============================ MEDIA QUERY ============================================ */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:300px) and (max-width: 600px) {
   .submit {
     width: 20%;
   }
 
   .div1, .div2, .div3 {
     margin: 7% 10%;
+    padding: 1px;
   }
    .table0 , .table1 , .table2 , .table3{
   width: 100%;
-} 
-  
+}
+
   img {
     height: auto;
     width: 35%;
@@ -124,3 +125,4 @@ footer {
     border: 6px double #e7dec8;
   }
 }
+
