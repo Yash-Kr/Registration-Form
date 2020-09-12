@@ -109,8 +109,7 @@ footer {
   }
 
   .div1, .div2, .div3 {
-    margin: 7% 10%;
-    padding: 1px;
+    max-width: 600px;
   }
    .table0 , .table1 , .table2 , .table3{
   width: 100%;
