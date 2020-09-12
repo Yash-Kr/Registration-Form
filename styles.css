@@ -1,0 +1,123 @@
+body {
+  height: 100%;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: grid;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  ;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+}
+
+.div1, .div0 {
+  margin: 2% 10%;
+}
+
+.div2, .div3 {
+  margin: 5% 10%;
+}
+
+.table0 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  width: 25%;
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 8px double #e7dec8;
+}
+
+fieldset {
+  font-family: 'Acme', sans-serif;
+  color: #333333;
+  background-color: #fff3cd;
+  border-radius: 10px;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+legend {
+  font-family: 'Patua One', cursive;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: calc(50% - 35px - 8px);
+}
+
+td {
+  height: 30px;
+}
+
+input, textarea {
+  background-color: white;
+}
+
+input:hover, textarea:hover {
+  background-color: #f5f1da;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  color: #333333;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit {
+  width: 10%;
+  height: 30px;
+  font-family: 'Acme', sans-serif;
+  border: 2px solid #ff8264;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+.submit:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border: 3px solid white;
+}
+
+footer {
+  margin: 15% auto 0.5%;
+  padding-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ============================ MEDIA QUERY ============================================ */
+@media only screen and (max-width: 768px) {
+  .submit {
+    width: 20%;
+  }
+
+  .div1, .div2, .div3 {
+    margin: 7% 10%;
+  }
+
+  img {
+    height: auto;
+    width: 35%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 6px double #e7dec8;
+  }
+}

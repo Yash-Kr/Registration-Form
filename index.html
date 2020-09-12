@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Archivo+Black&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+
+
+  <form>
+
+    <div class="div0">
+      <table class="table0">
+        <tr>
+          <td><img src="child.png" alt="Profile Picture"></td>
+        </tr>
+        <tr>
+          <td> <input type="file" id="profile" name="profile"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ======================================= REGISTRATION FORM PART 1 ===================================================== -->
+    <div class="div1">
+
+      <fieldset>
+        <legend>BASIC DETAILS</legend>
+
+        <table class="table1">
+          <tr>
+            <td class="c1"> <label for="fnum">Form Number </label> </td>
+            <td> <input type="number" id="fnum" name="form_number" maxlength="10" required><br> </td>
+          </tr>
+
+          <tr>
+            <td class="c1"> <label for="name">Name </label> </td>
+            <td> <input type="text" id="name" name="name" required><br> </td>
+          </tr>
+
+          <tr>
+            <td class="c1"> <label for="fnum">Roll Number </label></td>
+            <td><input type="number" id="fnum" name="roll_number" maxlength="7" required><br></td>
+          </tr>
+
+          <tr>
+            <td class="c1"> <label for="gender">Gender</label></td>
+            <td>
+              <label>Male</label>
+              <input type="radio" id="gender" name="gender" value="Male" required>
+              <label>Female</label>
+              <input type="radio" id="gender" name="gender" value="Female" required><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="c1"><label for="dob">DOB</label></td>
+            <td> <input type="date" id="dob" name="dob" value="DOB" required><br></td>
+          </tr>
+
+
+          <tr>
+            <td class="c1"> <label for="pwd">PWD</label></td>
+            <td>
+              <label>Yes</label>
+              <input type="radio" id="pwd" name="pwd" value="Yes" required>
+              <label>No</label>
+              <input type="radio" id="pwd" name="pwd" value="No" required><br>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="c1"><label for="category">Category</label></td>
+            <td>
+              <select id="category" name="category">
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+              </select><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="c1"><label for="address">Address</label><br></td>
+            <td> <textarea id="address" name="address"></textarea><br></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"> <label>Please Input the Correct Pin Code</label><br></td>
+          </tr>
+
+          <tr>
+            <td class="c1"> <label for="pin">Pin Code </label></td>
+            <td> <input type="number" id="pin" name="Pin_Code" maxlength="6" required><br></td>
+          </tr>
+
+          <tr>
+            <td class="c1"><label for="num1">Student's Contact No.</label></td>
+            <td><input type="number" id="num1" name="student's_num" maxlength="10" required><br></td>
+          </tr>
+
+          <tr>
+            <td class="c1"> <label for="num2">Guardian's Contact No.</label></td>
+            <td><input type="number" id="num2" name="guardian_num" maxlength="10" required><br></td>
+          </tr>
+
+
+        </table>
+
+      </fieldset>
+
+    </div>
+
+    <!-- ======================================= REGISTRATION FORM PART 2 ===================================================== -->
+
+    <div class="div2">
+
+      <fieldset>
+        <legend>ACADEMIC INFORMATION</legend>
+
+        <table class="table2">
+
+          <tr>
+            <td> <label for="course">COURSE</label> </td>
+            <td>
+              <select id="course" name="course">
+                <option value="B.Tech">B.Tech</option>
+                <option value="B.Arch">B.Arch</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="Integ.MSc">Integ.MSc</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="branch">Branch</label> </td>
+            <td> <input type="text" id="branch" name="branch" required> </td>
+
+          </tr>
+
+          <tr>
+            <td> <label for="semester">Semester</label> </td>
+            <td>
+              <select id="semester" name="semester">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+              </select>
+              <label>(for which allotment will be done)</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="air">All India Rank</label> </td>
+            <td> <input type="number" id="air" name="air" required>
+              <label>(2019 JEE Main/Gate)</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="catrank">Category Rank</label> </td>
+            <td> <input type="number" id="catrank" name="catrank" required>
+              <label>(2019 JEE Main/Gate)</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="cgpa">CGPA</label> </td>
+            <td> <input type="number" id="cgpa" name="cgpa" required></td>
+          </tr>
+
+          <tr>
+            <td> <label for="backlog">Backlog</label></td>
+            <td>
+              <label>Yes</label>
+              <input type="radio" id="backlog" name="backlog" value="Yes" required>
+              <label>No</label>
+              <input type="radio" id="backlog" name="backlog" value="No" required><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="hostel">Hostel Accomodation</label></td>
+            <td>
+              <label>Yes</label>
+              <input type="radio" id="hostel" name="hostel" value="Yes" required>
+              <label>No</label>
+              <input type="radio" id="hostel" name="hostel" value="No" required>
+              <label>(IF ANY)</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="hostelname">Name of Hostel</label> </td>
+            <td> <input type="text" id="hostelname" name="hostelname" required> </td>
+          </tr>
+
+          <tr>
+            <td> <label for="roomnum"></label> Room Number </td>
+            <td> <input type="number" id="roomnum" name="roomnum"> </td>
+          </tr>
+
+        </table>
+
+      </fieldset>
+
+    </div>
+
+
+    <!-- ======================================= REGISTRATION FORM PART 3 ===================================================== -->
+    <div class="div3">
+      <fieldset>
+        <legend>ACCOUNT DETAILS FOR REFUNDING PROCESS</legend>
+
+        <table class="table3">
+          <tr>
+            <td> <label for="account">Account Holder Name</label> </td>
+            <td> <input type="text" id="account" name="account" required>
+              <label>As Per Bank Passbook</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="accnum">Account Number</label> </td>
+            <td> <input type="number" id="accnum" name="accnum" required> </td>
+          </tr>
+
+          <tr>
+            <td> <label for="ifsc">IFSC CODE</label> </td>
+            <td> <input type="tel" id="ifsc" name="ifsc" pattern="[A-Z]{4}0[A-Z0-9]{6}" required> </td>
+          </tr>
+
+          <tr>
+            <td> <label for="bank">Bank Name</label> </td>
+            <td> <input type="text" id="bank" name="bank"> </td>
+          </tr>
+
+          <tr>
+            <td> <label for="bankbranch">Bank Branch</label> </td>
+            <td> <input type="text" id="bankbranch" name="bankbranch"> </td>
+          </tr>
+
+        </table>
+      </fieldset>
+
+    </div>
+    <!-- =================================================== End of FORM =============================================== -->
+    <div class="submit-btn">
+      <input class="submit" type="submit" value="Submit">
+    </div>
+  </form>
+
+  <footer>
+    <h4>©copyright 2020 <br>This form is Designed by - <br> Name : Yash Kumar &nbsp Roll : 1906064 <br> National Institute of Technology, Patna </h4>
+  </footer>
+
+</body>
+
+</html>
